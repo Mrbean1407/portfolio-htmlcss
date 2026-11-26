@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="logo" href="#about">My Portfolio</a>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <header class="hero" id="about">
+            <div class="hero-text">
+                <h1>Hello, I am a Junior Developer</h1>
+                <p>Hello! I am an AI major student of Swinburne Vietnam learning front-end development.</p>
+                <a class="button" href="#projects">View My Projects</a>
+            </div>
+            <img src="profile.svg" alt="Placeholder profile illustration">
+        </header>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>HTML Portfolio</h3>
+                    <p>A personal profile built using HTML.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Styled Portfolio</h3>
+                    <p>A portfolio with colours and CSS styling.</p>
+                </article>
+                <article class="project-card">
+                    <h3>Spam Detection</h3>
+                    <p>A sample project about detecting spam emails.</p>
+                </article>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Machine Learning</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025</td>
+                        <td>Python Basics</td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>Cloud computing architecture(AWS)</td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>Network and Switching</td>
+                    </tr>
+                    <tr>
+                        <td>2026</td>
+                        <td>Web Development</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <p>This is a demonstration form; messages are not sent.</p>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <button type="submit" disabled>Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>My Portfolio | 2026</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+:root {
+    --primary: #2563eb;
+    --dark: #1e3a8a;
+    --page: #f1f5f9;
+    --text: #1f2937;
+    --border: #cbd5e1;
+    --table-heading: #dbeafe;
+    --input-border: #94a3b8;
+    --surface: white;
+    --radius: 8px;
+    --section-padding: 24px;
+}
+
+/* Basic page styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--page);
+    color: var(--text);
+}
+header, footer {
+    background-color: var(--dark);
+    color: var(--surface);
+    text-align: center;
+    padding: var(--section-padding);
+}
+header img {
+    border-radius: 50%;
+}
+/* Keep the menu visible while scrolling */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--primary);
+    text-align: center;
+    padding: 12px;
+}
+nav a {
+    display: inline-block;
+    color: var(--surface);
+    text-decoration: none;
+    margin: 4px 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+section {
+    background-color: var(--surface);
+    padding: var(--section-padding);
+    margin-bottom: 20px;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 6px #00000015;
+    scroll-margin-top: 85px;
+}
+h2 {
+    color: var(--dark);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: var(--table-heading);
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font: inherit;
+}
+.button {
+    background-color: var(--primary);
+    color: var(--surface);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font: inherit;
+}
+.button:hover, .button:focus-visible {
+    background-color: var(--dark);
+}
+
+label { display: block; }
+:focus-visible { outline: 3px solid #64748b; outline-offset: 3px; }
+
+.button:disabled { opacity: 0.65; cursor: not-allowed; }
